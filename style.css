@@ -291,8 +291,8 @@ header {
 }
 
 #overview,
-#about,
-#services,
+#symptoms,
+#treatments,
 #tours {
   min-height: 100vh;
 }
