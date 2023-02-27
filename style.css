@@ -100,7 +100,6 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
 }
 
@@ -189,7 +188,7 @@ nav {
   min-height: 50px;
   display: grid;
   place-items: center;
-  padding-top: 5px;
+  padding: 12px 0;
 }
 
 .nav-center {
@@ -227,9 +226,11 @@ nav {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  border-radius: var(--radius);
+  padding: 0.3rem;
 }
 
-.logo {
+#logo {
   cursor: pointer;
 }
 
@@ -326,8 +327,8 @@ footer p {
 .top-link {
   font-size: 1.25rem;
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 1rem;
+  right: 1rem;
   background: var(--clr-secondary);
   width: 2rem;
   height: 2rem;
@@ -340,15 +341,15 @@ footer p {
   z-index: -100;
 }
 
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
-}
-
 @media screen and (min-width: 500px) {
   nav {
     min-height: 65px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container p {
+    max-width: 40rem;
   }
 }
 
@@ -446,7 +447,7 @@ footer p {
   }
 
   50% {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 
   100% {
