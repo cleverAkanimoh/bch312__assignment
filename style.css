@@ -255,10 +255,6 @@ nav {
   color: var(--clr-secondary);
 }
 
-/* .fixed-nav .links-container {
-  height: auto !important;
-} */
-
 .nav-toggle {
   font-size: 1.5rem;
   color: var(--clr-grey-1);
@@ -270,11 +266,11 @@ nav {
 
 .logo {
   cursor: pointer;
-  box-shadow: var(--light-shadow);
 }
 
 .nav-toggle:hover {
   color: var(--clr-secondary);
+  box-shadow: var(--dark-shadow);
 }
 
 .links-container {
