@@ -1,15 +1,4 @@
-/*
-=============== 
-Fonts
-===============
-*/
 @import url("https://fonts.googleapis.com/css?family=Kayla|Roboto:400,700&display=swap");
-
-/*
-=============== 
-Variables
-===============
-*/
 
 :root {
   /* dark shades of primary color*/
@@ -268,7 +257,7 @@ nav {
 /* hero */
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 207, 212, 0.178), rgba(0, 0, 0, 0.678)),
+  background: linear-gradient(180deg, rgba(63, 207, 212, 0.178), rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.856)),
     url(./images/Wilsons-Disease_hero.jpg) center/cover no-repeat;
 }
 
@@ -301,10 +290,11 @@ header {
   color: var(--clr-secondary);
 }
 
+#overview,
 #about,
 #services,
 #tours {
-  height: 80vh;
+  min-height: 100vh;
 }
 
 #services {
