@@ -280,12 +280,8 @@ header {
 
 /* sections and title */
 .title h2 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.title span {
-  color: var(--clr-secondary);
+  text-transform: capitalize;
+  padding: 1rem;
 }
 
 #overview,
