@@ -150,16 +150,12 @@ p {
   padding-bottom: 5rem;
 }
 
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
 main {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  width: 100%;
+  padding:0 3px;
 }
 
 /*
@@ -279,11 +275,6 @@ header {
 }
 
 /* sections and title */
-
-main {
-  width: 100%;
-  padding:0 3px;
-}
 
 .section {
   display: flex;
