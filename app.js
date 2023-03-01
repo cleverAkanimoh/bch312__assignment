@@ -4,6 +4,10 @@ const linksContainer = document.querySelector('.links-container');
 const links = document.querySelector('.links');
 const navbar = document.querySelector('#nav');
 
+const slides = document.querySelectorAll('.slides');
+const leftBtn = document.querySelector('.left');
+const rightBtn = document.querySelector('.right');
+
 
 date.innerText = new Date().getFullYear();
 
@@ -31,7 +35,7 @@ window.onscroll = () => {
         navbar.classList.remove('fixed-nav');
     }
 
-    if (scrollHeight > 500 ) {
+    if (scrollHeight > 500) {
         topLink.classList.add('show-link');
     } else {
         topLink.classList.remove('show-link');
@@ -58,11 +62,41 @@ scrollLinks.forEach((link) => {
         if (navHeight > 82) {
             position = position + containerHeight - 20
         }
-        
+
         window.scrollTo({
-            left:0,
+            left: 0,
             top: position,
         });
         linksContainer.style.height = 0;
     };
 });
+
+function moveSlides() {
+    let count = 0;
+
+    leftBtn.onclick = () => {
+        count--;
+        slideMove();
+    }
+    rightBtn.onclick = () => {
+        count++;
+        slideMove();
+    }
+
+    const slideMove = () => {
+        if (count > slides.length - 1) {
+            count = 0;
+        } else if (count < 0) {
+            count = slides.length - 1;
+        }
+
+        slides.forEach(slide => {
+            slide.style.transform = `translateX(-${count * 100}%)`;
+        })
+    }
+    setInterval(() => {
+        count++;
+        slideMove()
+    }, 10000)
+}
+moveSlides()
