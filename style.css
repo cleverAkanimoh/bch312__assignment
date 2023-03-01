@@ -63,7 +63,7 @@ html {
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
-  color: var(--clr-grey-1);
+  color: var(--clr-primary-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -281,26 +281,34 @@ header {
 /* sections and title */
 
 main {
-  border: 1px solid red;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding:0 3px;
 }
 
+.section {
+  display: flex;
+  width: 100%;
+}
+
 .title {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .title h2 {
   text-transform: capitalize;
-  padding: 1rem;
+  padding: 0.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.first-text {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #383838;
 }
 
 #overview,
