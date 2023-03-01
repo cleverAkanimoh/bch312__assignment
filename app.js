@@ -97,6 +97,6 @@ function moveSlides() {
     setInterval(() => {
         count++;
         slideMove()
-    }, 10000)
+    }, 15000)
 }
 moveSlides()

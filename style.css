@@ -342,11 +342,20 @@ footer p {
   nav {
     min-height: 65px;
   }
+
+  p {
+    padding: 0 1rem;
+    font-size: 1.08rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;
+  }
+  .title p {
+    padding: 0 2rem;
+    
   }
 }
 
