@@ -67,6 +67,28 @@ figcaption {
     margin-bottom: 9px;
 }
 
+footer ol {
+    font-size: 0.95rem;
+    color: #c5c5c5;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+footer ol li {
+    margin-bottom: 9px;
+}
+
+footer ol a {
+    color: var(--clr-secondary);
+    text-decoration: underline;
+}
+
+footer ol a:hover {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 500px) {
     #slide_show {
         width: 460px;
@@ -79,6 +101,10 @@ figcaption {
 
     .slides img, .slides2 img, .slides3 img{
         width: 460px;
+    }
+
+    footer ol {
+        font-size: 1.05rem;
     }
 }
 

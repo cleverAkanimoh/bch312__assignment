@@ -320,6 +320,7 @@ footer {
 }
 
 footer p {
+  font-size: 0.7rem;
   color: var(--clr-white);
   text-align: center;
   text-transform: capitalize;
