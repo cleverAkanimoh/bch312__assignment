@@ -107,8 +107,10 @@ h4 {
 }
 
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   color: var(--clr-grey-5);
+  font-size: 0.95rem;
+  color: #494949f5;
 }
 
 /*  global classes */
@@ -171,7 +173,8 @@ nav {
   min-height: 50px;
   display: grid;
   place-items: center;
-  padding: 12px 0;
+  padding: 0.5rem 0;
+  z-index: 10;
 }
 
 .nav-center {
@@ -297,10 +300,6 @@ header {
   margin-top: 20px;
 }
 
-p {
-  font-size: 0.95rem;
-  color: #383838;
-}
 
 #overview,
 #symptoms,
