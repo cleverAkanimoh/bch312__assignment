@@ -112,6 +112,9 @@ p {
   font-size: 0.95rem;
   color: #494949f5;
 }
+button {
+  cursor: pointer;
+}
 
 /*  global classes */
 
@@ -282,6 +285,8 @@ header {
 .section {
   display: flex;
   width: 100%;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .title {
@@ -292,7 +297,7 @@ header {
 .title h2 {
   text-transform: capitalize;
   padding: 0.5rem;
-  color: #222;
+  color: var(--clr-primary-2);
   margin-bottom: 1rem;
 }
 
@@ -304,7 +309,7 @@ header {
 #overview,
 #symptoms,
 #treatments,
-#tours {
+#metabolism {
   min-height: 100vh;
 }
 
@@ -347,6 +352,10 @@ footer p {
     padding: 0 1rem;
     font-size: 1.08rem;
   }
+  .section {
+    padding: 0;
+    width: 95%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -355,7 +364,9 @@ footer p {
   }
   .title p {
     padding: 0 2rem;
-    
+  }
+  .section {
+    width: 90%;
   }
 }
 
@@ -437,8 +448,8 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
+  .section {
+    width: 70vw;
   }
 }
 
