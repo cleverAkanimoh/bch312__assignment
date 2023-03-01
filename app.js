@@ -11,8 +11,9 @@ const slides3 = document.querySelectorAll('.slides3');
 const leftBtn = document.querySelectorAll('.left');
 const rightBtn = document.querySelectorAll('.right');
 
-
-date.innerText = new Date().getFullYear();
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let d = new Date()
+date.innerText =`${months[d.getMonth()]} ${d.getFullYear()}`;
 
 // nav toggle
 
@@ -40,6 +41,7 @@ window.onscroll = () => {
 
     if (scrollHeight > 500) {
         topLink.classList.add('show-link');
+        moveSlides();
     } else {
         topLink.classList.remove('show-link');
     }
@@ -135,4 +137,3 @@ function moveSlides() {
         slideMove3();
     }, 15000)
 }
-moveSlides()
