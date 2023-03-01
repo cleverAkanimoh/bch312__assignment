@@ -56,6 +56,10 @@ figcaption {
     padding: 0.5rem 0;
 }
 
+#symptoms_list {
+    list-style: circle;
+}
+
 @media screen and (min-width: 500px) {
     #slide_show {
         width: 460px;
