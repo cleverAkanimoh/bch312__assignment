@@ -112,6 +112,7 @@ p {
   font-size: 0.95rem;
   color: #494949f5;
 }
+
 button {
   cursor: pointer;
 }
@@ -160,7 +161,7 @@ main {
   display: grid;
   place-items: center;
   width: 100%;
-  padding:0 3px;
+  padding: 0 3px;
 }
 
 /*
@@ -352,6 +353,7 @@ footer p {
     padding: 0 1rem;
     font-size: 1.08rem;
   }
+
   .section {
     padding: 0;
     width: 95%;
@@ -362,9 +364,11 @@ footer p {
   .container p {
     max-width: 40rem;
   }
+
   .title p {
     padding: 0 2rem;
   }
+
   .section {
     width: 90%;
   }

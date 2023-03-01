@@ -5,8 +5,9 @@ const links = document.querySelector('.links');
 const navbar = document.querySelector('#nav');
 
 const slides = document.querySelectorAll('.slides');
-const leftBtn = document.querySelector('.left');
-const rightBtn = document.querySelector('.right');
+const slides2 = document.querySelectorAll('.slides2');
+const leftBtn = document.querySelectorAll('.left');
+const rightBtn = document.querySelectorAll('.right');
 
 
 date.innerText = new Date().getFullYear();
@@ -74,14 +75,18 @@ scrollLinks.forEach((link) => {
 function moveSlides() {
     let count = 0;
 
-    leftBtn.onclick = () => {
+    leftBtn.forEach(btn => btn.onclick = () => {
         count--;
         slideMove();
-    }
-    rightBtn.onclick = () => {
+        slideMove2()
+    })
+    rightBtn.forEach(btn => btn.onclick = () => {
         count++;
         slideMove();
+        slideMove2()
     }
+
+    )
 
     const slideMove = () => {
         if (count > slides.length - 1) {
@@ -97,6 +102,24 @@ function moveSlides() {
     setInterval(() => {
         count++;
         slideMove()
+        slideMove2()
+    }, 15000)
+
+    const slideMove2 = () => {
+        if (count > slides2.length - 1) {
+            count = 0;
+        } else if (count < 0) {
+            count = slides2.length - 1;
+        }
+
+        slides2.forEach(slide => {
+            slide.style.transform = `translateX(-${count * 100}%)`;
+        })
+    }
+    setInterval(() => {
+        count++;
+        slideMove()
+        slideMove2()
     }, 15000)
 }
 moveSlides()
