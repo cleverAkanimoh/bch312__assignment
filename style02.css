@@ -50,9 +50,8 @@
 
 figcaption {
     text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    font-style: italic;
+    font: bold 1.5rem "Tangerine", sans-serif;
+    letter-spacing: 0.05rem;
     padding: 0.5rem 0;
 }
 

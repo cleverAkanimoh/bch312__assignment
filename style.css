@@ -32,7 +32,8 @@
   --clr-secondary: hsla(182, 63%, 54%);
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Kayla", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --ff--beauty: "Tangerine", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.05rem;
   --radius: 0.4rem;
@@ -61,7 +62,7 @@ html {
 }
 
 body {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   background: var(--clr-white);
   color: var(--clr-primary-1);
   line-height: 1.5;
