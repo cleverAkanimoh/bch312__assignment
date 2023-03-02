@@ -91,7 +91,6 @@ footer ol a:hover {
 @media screen and (min-width: 375px) {
     #slide_show {
         width: 350px;
-        height: 50vh;
     }
 
     .slides, .slides2, .slides3 {
