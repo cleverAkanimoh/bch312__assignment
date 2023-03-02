@@ -468,7 +468,11 @@ footer p {
   }
 
   #cases {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #cases:last-child {
+    grid-column: 1/2;
   }
 }
 
