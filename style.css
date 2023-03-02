@@ -467,13 +467,13 @@ footer p {
     width: 70vw;
   }
 
-  #cases {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  /* #cases {
+    grid-template-columns: repeat(3, 1fr);
+  } */
 
-  #cases:last-child {
-    grid-column: 1/2;
-  }
+  /* #cases:last-child {
+    grid-column: span 2;
+  } */
 }
 
 .show-link {
