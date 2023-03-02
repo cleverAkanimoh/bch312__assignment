@@ -33,7 +33,7 @@
   --clr-black: #222;
 
   --ff-primary: "Golos Text", sans-serif;
-  --ff-secondary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Shantell Sans", sans-serif;
   --ff--beauty: "Tangerine", sans-serif;
 
   --transition: all 0.3s linear;
@@ -244,12 +244,11 @@ nav {
 .links a {
   background: var(--clr-white);
   color: var(--clr-grey-5);
-  font-size: 1.1rem;
+  font: bold 1.1rem var(--ff-secondary);
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
   transition: var(--transition);
-  font-weight: bold;
   padding: 0.75rem 0;
 }
 
@@ -291,6 +290,7 @@ header {
   width: 97%;
   margin-top: 20px;
   padding-bottom: 1rem;
+  max-width: var(--max-width);
 }
 
 .title {
@@ -304,6 +304,10 @@ header {
   color: var(--clr-primary-2);
   font-family: var(--ff-secondary);
   margin-bottom: 1rem;
+}
+
+.title p {
+  color: var(--clr-grey-2);
 }
 
 .first-text {
@@ -326,7 +330,7 @@ footer {
 
 footer p {
   font-size: 0.71rem;
-  color: var(--clr-white);
+  color: var(--clr-grey-8);
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -387,15 +391,7 @@ footer p {
   }
 
   h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-  }
-
-  h4 {
-    font-size: 1rem;
+    font-size: 2.1rem;
   }
 
   body {
@@ -404,8 +400,7 @@ footer p {
 
   h1,
   h2,
-  h3,
-  h4 {
+  h3 {
     line-height: 1;
   }
 

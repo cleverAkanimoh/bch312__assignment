@@ -79,12 +79,12 @@ footer ol li {
     margin-bottom: 9px;
 }
 
-footer ol a {
+footer ol a, .design {
     color: var(--clr-secondary);
     text-decoration: underline;
 }
 
-footer ol a:hover {
+footer ol a:hover, .design:hover {
     text-decoration: none;
 }
 
@@ -133,5 +133,9 @@ footer ol a:hover {
 
     .slides img, .slides2 img, .slides3 img {
         width: 700px;
+    }
+
+    footer ol, #symptoms_list {
+        margin-left: 60px;
     }
 }
