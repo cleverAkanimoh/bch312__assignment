@@ -455,6 +455,10 @@ footer p {
   .links a:hover {
     color: var(--clr-white);
   }
+
+  footer{
+    padding: 5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
