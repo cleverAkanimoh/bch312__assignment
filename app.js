@@ -41,7 +41,6 @@ window.onscroll = () => {
 
     if (scrollHeight > 500) {
         topLink.classList.add('show-link');
-        moveSlides();
     } else {
         topLink.classList.remove('show-link');
     }
@@ -137,3 +136,4 @@ function moveSlides() {
         slideMove3();
     }, 15000)
 }
+moveSlides();
