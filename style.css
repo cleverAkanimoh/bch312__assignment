@@ -34,7 +34,7 @@
 
   --ff-primary: "Golos Text", sans-serif;
   --ff-secondary: "Shantell Sans", sans-serif;
-  --ff--beauty: "Tangerine", sans-serif;
+  --ff-beauty: "Tangerine", sans-serif;
 
   --transition: all 0.3s linear;
   --spacing: 0.05rem;
@@ -101,6 +101,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  font-family: var(--ff-secondary);
 }
 
 h3 {

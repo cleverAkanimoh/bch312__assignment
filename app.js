@@ -13,6 +13,11 @@ const rightBtn = document.querySelectorAll('.right');
 
 const readMore = document.querySelectorAll('.read_more');
 
+const overlay = document.querySelectorAll('.overlay');
+const groupBtn = document.querySelector('#group');
+const coverBtn = document.querySelector('#cover');
+
+
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let d = new Date()
 date.innerText = `${months[d.getMonth()]} ${d.getFullYear()}`;
@@ -149,3 +154,18 @@ readMore.forEach(btn => btn.onclick = (e) => {
     aside.classList.toggle('show')
     if(!aside.classList.contains('show')) target.innerText = 'continue reading';
 });
+
+// toggle cover page and group page
+
+function toggleOverlays(className, index, text) {
+    className.onclick = () => {
+        className.innerHTML = '*close overlay';
+        overlay[index].classList.toggle('show_overlay');
+        if(!overlay[index].classList.contains('show_overlay')) {
+            className.innerText = text;
+            setTimeout(()=> className.style.display = 'none', 2000)
+        }
+    }
+}
+toggleOverlays(groupBtn, 0,'see group members');
+toggleOverlays(coverBtn, 1, 'view cover page');
