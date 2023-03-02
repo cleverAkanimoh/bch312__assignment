@@ -50,8 +50,6 @@
     translate:0 -100%;
     padding: 0.5rem;
     z-index: 150;
-    display: grid;
-    place-items: center;
     background: var(--clr-white);
     transition: var(--transition);
     overflow-y: scroll;
