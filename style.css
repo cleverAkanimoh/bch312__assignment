@@ -31,14 +31,18 @@
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-secondary: hsla(182, 63%, 54%);
   --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+
+  --ff-primary: "Golos Text", sans-serif;
+  --ff-secondary: "Source Sans Pro", sans-serif;
   --ff--beauty: "Tangerine", sans-serif;
+
   --transition: all 0.3s linear;
   --spacing: 0.05rem;
   --radius: 0.4rem;
+
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
   --max-width: 1170px;
   --fixed-width: 620px;
 }
@@ -62,7 +66,7 @@ html {
 }
 
 body {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   background: var(--clr-white);
   color: var(--clr-primary-1);
   line-height: 1.5;
@@ -153,9 +157,6 @@ button {
 }
 
 /* section */
-.section {
-  padding-bottom: 1rem;
-}
 
 main {
   min-height: 100vh;
@@ -272,6 +273,7 @@ header {
 
 .container h1 {
   color: var(--clr-white);
+  font-family: var(--ff-secondary);
   text-transform: uppercase;
 }
 
@@ -286,8 +288,9 @@ header {
 
 .section {
   display: flex;
-  width: 100%;
+  width: 97%;
   margin-top: 20px;
+  padding-bottom: 1rem;
 }
 
 .title {
@@ -299,6 +302,7 @@ header {
   text-transform: capitalize;
   padding: 0.5rem;
   color: var(--clr-primary-2);
+  font-family: var(--ff-secondary);
   margin-bottom: 1rem;
 }
 

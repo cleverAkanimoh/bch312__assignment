@@ -88,6 +88,21 @@ footer ol a:hover {
     text-decoration: none;
 }
 
+@media screen and (min-width: 375px) {
+    #slide_show {
+        width: 350px;
+        height: 50vh;
+    }
+
+    .slides, .slides2, .slides3 {
+        width: 350px;
+    }
+
+    .slides img, .slides2 img, .slides3 img{
+        width: 350px;
+    }
+}
+
 @media screen and (min-width: 500px) {
     #slide_show {
         width: 460px;
