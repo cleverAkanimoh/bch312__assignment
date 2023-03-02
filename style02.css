@@ -10,6 +10,7 @@
     opacity: 0.6;
     text-decoration: underline;
     transition: all 0.4s;
+    cursor: pointer;
 }
 
 #slide_show {

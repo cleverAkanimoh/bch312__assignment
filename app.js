@@ -146,5 +146,5 @@ readMore.forEach(btn => btn.onclick = (e) => {
     let target = e.target;
     console.log(target);
     hidden.forEach(text => text.classList.toggle('show'))
-    target.innerText = 'see less'
+    target.innerText = 'see less';
 });
