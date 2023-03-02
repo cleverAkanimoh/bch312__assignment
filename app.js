@@ -11,9 +11,12 @@ const slides3 = document.querySelectorAll('.slides3');
 const leftBtn = document.querySelectorAll('.left');
 const rightBtn = document.querySelectorAll('.right');
 
+const readMore = document.querySelectorAll('.read_more');
+const hidden = document.querySelectorAll('.hidden');
+
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let d = new Date()
-date.innerText =`${months[d.getMonth()]} ${d.getFullYear()}`;
+date.innerText = `${months[d.getMonth()]} ${d.getFullYear()}`;
 
 // nav toggle
 
@@ -137,3 +140,11 @@ function moveSlides() {
     }, 15000)
 }
 moveSlides();
+
+
+readMore.forEach(btn => btn.onclick = (e) => {
+    let target = e.target;
+    console.log(target);
+    hidden.forEach(text => text.classList.add('show'))
+    btn.innerT = 'hidden'
+});

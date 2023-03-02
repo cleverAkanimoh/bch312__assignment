@@ -1,3 +1,17 @@
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.read_more {
+    opacity: 0.6;
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+
 #slide_show {
     width: 300px;
     height: 40vh;

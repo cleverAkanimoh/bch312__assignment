@@ -314,12 +314,17 @@ header {
   margin-top: 20px;
 }
 
-
 #overview,
 #symptoms,
 #treatments,
 #metabolism {
   min-height: 100vh;
+}
+
+#cases {
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 400px, 500px));
 }
 
 footer {
