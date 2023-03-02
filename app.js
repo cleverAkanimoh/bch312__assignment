@@ -143,8 +143,9 @@ moveSlides();
 
 readMore.forEach(btn => btn.onclick = (e) => {
     let target = e.target;
-    let asides = target.previousElementSibling
-    console.log(target.previousElementSibling);
+    let aside = target.previousElementSibling;
+
     target.innerText = 'see less';
-    // hidden.forEach(text => text.classList.toggle('show'))
+    aside.classList.toggle('show')
+    if(!aside.classList.contains('show')) target.innerText = 'continue reading';
 });

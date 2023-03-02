@@ -8,10 +8,11 @@
 
 .read_more {
     width: fit-content;
-    opacity: 0.6;
+    opacity: 0.7;
     text-decoration: underline;
     transition: all 0.4s;
     cursor: pointer;
+    margin-top: -1rem;
 }
 
 .read_more:hover {
