@@ -329,7 +329,7 @@ header {
 }
 
 #cases .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -383,10 +383,6 @@ footer p {
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;
-  }
-
-  .title p {
-    padding: 0 2rem;
   }
 
   .section {

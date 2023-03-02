@@ -14,6 +14,10 @@
     cursor: pointer;
 }
 
+.read_more:hover {
+    text-decoration:none;
+}
+
 #slide_show {
     width: 300px;
     height: 40vh;
