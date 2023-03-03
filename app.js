@@ -14,6 +14,7 @@ const rightBtn = document.querySelectorAll('.right');
 const readMore = document.querySelectorAll('.read_more');
 
 const overlay = document.querySelectorAll('.overlay');
+const bottomBtn = document.querySelector('.bottomBtn');
 const groupBtn = document.querySelector('#group');
 const coverBtn = document.querySelector('#cover');
 
@@ -40,6 +41,7 @@ const topLink = document.querySelector('.top-link');
 window.onscroll = () => {
     const scrollHeight = window.pageYOffset;
     const navHeight = navbar.getBoundingClientRect().height;
+    
     if (scrollHeight > navHeight) {
         navbar.classList.add('fixed-nav');
     } else {
@@ -48,8 +50,10 @@ window.onscroll = () => {
 
     if (scrollHeight > 500) {
         topLink.classList.add('show-link');
+        bottomBtn.style.display = 'none';
     } else {
         topLink.classList.remove('show-link');
+        bottomBtn.style.display = 'flex';
     }
 };
 
@@ -163,7 +167,6 @@ function toggleOverlays(className, index, text) {
         overlay[index].classList.toggle('show_overlay');
         if(!overlay[index].classList.contains('show_overlay')) {
             className.innerText = text;
-            setTimeout(()=> className.style.display = 'none', 2000)
         }
     }
 }
