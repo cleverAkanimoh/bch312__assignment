@@ -95,7 +95,6 @@
     color: var(--clr-primary-2);
     margin-left: 5px;
     flex: 1;
-    font: bold 1.2rem var(--ff-beauty);
 }
 
 /*  */
@@ -265,8 +264,12 @@ footer ol a:hover,
         height: 95%;
     }
 
-    .group_overlay ol p, .cover_page h2 {
-        font-size: 1.3rem;
+    .cover_page h2 {
+        font-size: 2rem;
+    }
+
+    .group_overlay ol p, .cover_page h3 {
+        font-size: 1.4rem;
     }
 
     footer ol,

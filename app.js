@@ -51,13 +51,11 @@ window.onscroll = () => {
     if (scrollHeight > 500) {
         topLink.classList.add('show-link');
         bottomBtn.style.display = 'none';
-        
+
         overlay.forEach(layer => layer.classList.remove('show_overlay'))
     } else {
         topLink.classList.remove('show-link');
         bottomBtn.style.display = 'flex';
-
-        // overlay.forEach(layer => layer.classList.add('show_overlay'))
     }
 };
 
@@ -160,7 +158,7 @@ readMore.forEach(btn => btn.onclick = (e) => {
 
     target.innerText = 'see less';
     aside.classList.toggle('show')
-    if(!aside.classList.contains('show')) target.innerText = 'continue reading';
+    if (!aside.classList.contains('show')) target.innerText = 'continue reading';
 });
 
 // toggle cover page and group page
@@ -169,10 +167,12 @@ function toggleOverlays(className, index, text) {
     className.onclick = () => {
         className.innerHTML = '*close overlay';
         overlay[index].classList.toggle('show_overlay');
-        if(!overlay[index].classList.contains('show_overlay')) {
+        if (!overlay[index].classList.contains('show_overlay')) {
             className.innerText = text;
         }
     }
 }
-toggleOverlays(groupBtn, 0,'see group members');
+toggleOverlays(groupBtn, 0, 'see group members');
 toggleOverlays(coverBtn, 1, 'view cover page');
+
+setTimeout(() => overlay[1].classList.remove('show_overlay'), 2000)
