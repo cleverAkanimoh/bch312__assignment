@@ -51,6 +51,7 @@ window.onscroll = () => {
     if (scrollHeight > 500) {
         topLink.classList.add('show-link');
         bottomBtn.style.display = 'none';
+        
         overlay.forEach(layer => layer.classList.remove('show_overlay'))
     } else {
         topLink.classList.remove('show-link');
