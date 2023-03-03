@@ -53,6 +53,8 @@
     background: var(--clr-white);
     transition: var(--transition);
     overflow-y: scroll;
+    display: grid;
+    place-items: center;
 }
 
 .show_overlay {
