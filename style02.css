@@ -60,16 +60,9 @@
     top: 0;
 }
 
-.cover_page div {
-    position: relative;
-}
 
-#date_created {
-    position: absolute;
-    right: 0;
-}
 
-.cover_page h3
+
 
 .cover_page h2, .cover_page h3 {
     line-height: 1.5 !important;
