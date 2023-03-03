@@ -96,19 +96,21 @@ function moveSlides() {
         slideMove();
         slideMove2();
         slideMove3();
+        clearInterval(intervals)
     })
+
     rightBtn.forEach(btn => btn.onclick = () => {
         count++;
         slideMove();
         slideMove2();
         slideMove3();
-    }
-
-    )
+        clearInterval(intervals)
+    })
 
     const slideMove = () => {
         if (count > slides.length - 1) {
             count = 0;
+            slideFunc()
         } else if (count < 0) {
             count = slides.length - 1;
         }
@@ -121,6 +123,7 @@ function moveSlides() {
     const slideMove2 = () => {
         if (count > slides2.length - 1) {
             count = 0;
+            slideFunc()
         } else if (count < 0) {
             count = slides2.length - 1;
         }
@@ -133,6 +136,7 @@ function moveSlides() {
     const slideMove3 = () => {
         if (count > slides3.length - 1) {
             count = 0;
+            slideFunc()
         } else if (count < 0) {
             count = slides3.length - 1;
         }
@@ -142,12 +146,14 @@ function moveSlides() {
         })
     }
 
-    setInterval(() => {
+    const slideFunc = () => {
         count++;
         slideMove();
         slideMove2();
         slideMove3();
-    }, 15000)
+    }
+
+    const intervals = setInterval(slideFunc, 15000)
 }
 moveSlides();
 
