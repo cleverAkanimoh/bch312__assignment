@@ -175,4 +175,4 @@ function toggleOverlays(className, index, text) {
 toggleOverlays(groupBtn, 0, 'see group members');
 toggleOverlays(coverBtn, 1, 'view cover page');
 
-setTimeout(() => overlay[1].classList.remove('show_overlay'), 2000)
+setTimeout(() => overlay[1].classList.remove('show_overlay'), 5000)
