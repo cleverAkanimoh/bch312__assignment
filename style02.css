@@ -248,6 +248,14 @@ footer ol a:hover,
         width: 700px;
     }
 
+    .overlay {
+        height: 95%;
+    }
+
+    .group_overlay ol p {
+        font-size: 1.15rem;
+    }
+
     footer ol,
     #symptoms_list {
         margin-left: 60px;
