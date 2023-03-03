@@ -41,7 +41,7 @@ const topLink = document.querySelector('.top-link');
 window.onscroll = () => {
     const scrollHeight = window.pageYOffset;
     const navHeight = navbar.getBoundingClientRect().height;
-    
+
     if (scrollHeight > navHeight) {
         navbar.classList.add('fixed-nav');
     } else {
@@ -51,9 +51,12 @@ window.onscroll = () => {
     if (scrollHeight > 500) {
         topLink.classList.add('show-link');
         bottomBtn.style.display = 'none';
+        overlay.forEach(layer => layer.classList.remove('show_overlay'))
     } else {
         topLink.classList.remove('show-link');
         bottomBtn.style.display = 'flex';
+
+        // overlay.forEach(layer => layer.classList.add('show_overlay'))
     }
 };
 
