@@ -23,8 +23,7 @@
     width: 100%;
     position: fixed;
     bottom: 0.25rem;
-    left: 50%;
-    translate: -50%;
+    left: 0;
     z-index: 11;
     display: flex;
     justify-content: center;
