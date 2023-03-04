@@ -20,6 +20,7 @@ const coverBtn = document.querySelector('#cover');
 
 
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 let d = new Date()
 date.innerText = `${months[d.getMonth()]} ${d.getFullYear()}`;
 
@@ -52,7 +53,7 @@ window.onscroll = () => {
         topLink.classList.add('show-link');
         bottomBtn.style.display = 'none';
 
-        overlay.forEach(layer => layer.classList.remove('show_overlay'))
+        overlay.forEach(layer => layer.classList.remove('show_overlay'));
     } else {
         topLink.classList.remove('show-link');
         bottomBtn.style.display = 'flex';
