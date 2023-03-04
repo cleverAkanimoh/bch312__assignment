@@ -67,17 +67,18 @@
     place-items: center;
 }
 
-.cover_page h2, .cover_page h3 {
+.cover_page h2,
+.cover_page h3 {
     line-height: 1.75 !important;
     font-family: var(--ff-beauty);
 }
 
-.overlay h2{
+.overlay h2 {
     text-align: center;
     line-height: 4;
 }
 
-.overlay img{
+.overlay img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -88,17 +89,14 @@
     display: flex;
     align-items: center;
     text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-.group_overlay ol li:not(:last-child) {
-    border-bottom: 1px solid var(--clr-primary-5);
+    padding: 1rem 0;
 }
 
 .group_overlay ol p {
     color: var(--clr-primary-2);
-    margin-left: 5px;
-    flex: 1;
+    margin-left: 15px;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--clr-primary-8);
 }
 
 /* slides */
@@ -245,9 +243,13 @@ footer ol a:hover,
         margin-left: 1rem;
     }
 
-    .overlay img{
+    .overlay img {
         width: 80px;
         height: 80px;
+    }
+
+    .group_overlay ol li {
+        padding: 1.2rem 0;
     }
 }
 
@@ -273,7 +275,7 @@ footer ol a:hover,
         height: 94.5%;
     }
 
-    .overlay img{
+    .overlay img {
         width: 100px;
         height: 100px;
     }
@@ -281,8 +283,12 @@ footer ol a:hover,
     .cover_page h2 {
         font-size: 2rem;
     }
+    .group_overlay ol li {
+        padding: 1.4rem 0;
+    }
 
-    .group_overlay ol p, .cover_page h3 {
+    .group_overlay ol p,
+    .cover_page h3 {
         font-size: 1.4rem;
     }
 
