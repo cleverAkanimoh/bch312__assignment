@@ -43,7 +43,7 @@
 
 .overlay {
     width: 100%;
-    height: 93%;
+    height: 93.5%;
     position: fixed;
     top: -100%;
     left: 0;
@@ -240,6 +240,11 @@ footer ol a:hover,
     .read_more {
         margin-left: 1rem;
     }
+
+    .overlay img{
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -262,6 +267,11 @@ footer ol a:hover,
 
     .overlay {
         height: 94.5%;
+    }
+
+    .overlay img{
+        width: 100px;
+        height: 100px;
     }
 
     .cover_page h2 {
