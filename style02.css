@@ -83,12 +83,16 @@
     border-radius: 50%;
 }
 
-.group_overlay ol li{
+.group_overlay ol li {
     width: 100%;
     display: flex;
     align-items: center;
     text-transform: capitalize;
     margin-bottom: 20px;
+}
+
+.group_overlay ol li:not(:last-child) {
+    border-bottom: 1px solid var(--clr-primary-5);
 }
 
 .group_overlay ol p {
@@ -97,7 +101,7 @@
     flex: 1;
 }
 
-/*  */
+/* slides */
 
 #slide_show {
     width: 300px;
