@@ -16,7 +16,6 @@ const readMore = document.querySelectorAll('.read_more');
 const overlay = document.querySelectorAll('.overlay');
 const bottomBtn = document.querySelector('.bottomBtn');
 const groupBtn = document.querySelector('#group');
-const coverBtn = document.querySelector('#cover');
 
 
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -27,7 +26,6 @@ date.innerText = `${months[d.getMonth()]} ${d.getFullYear()}`;
 // nav toggle
 
 navToggle.onclick = () => {
-    // linksContainer.classList.toggle('show-links');
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const linksHeight = links.getBoundingClientRect().height;
     if (containerHeight === 0) {
@@ -180,6 +178,3 @@ function toggleOverlays(className, index, text) {
     }
 }
 toggleOverlays(groupBtn, 0, 'see group members');
-toggleOverlays(coverBtn, 1, 'view cover page');
-
-setTimeout(() => overlay[1].classList.remove('show_overlay'), 3000)
